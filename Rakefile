@@ -5,8 +5,8 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "medieval"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{Medieval random names generator and more!}
+    gem.description = %Q{This is a medieval names generator, inspired by faker gem. In the future it will be used for an medieval online strategy game.}
     gem.email = "radudinca@yahoo.com"
     gem.homepage = "http://github.com/rdinca/medieval"
     gem.authors = ["rdinca"]
