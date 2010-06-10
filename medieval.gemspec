@@ -23,7 +23,11 @@ Gem::Specification.new do |s|
      "README.rdoc",
      "Rakefile",
      "VERSION",
+     "lib/extras/array.rb",
      "lib/medieval.rb",
+     "lib/medieval/battalion_name.rb",
+     "lib/medieval/name.rb",
+     "medieval.gemspec",
      "test/helper.rb",
      "test/test_medieval.rb"
   ]
