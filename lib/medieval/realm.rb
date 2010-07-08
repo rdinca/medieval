@@ -11,7 +11,7 @@ module Medieval
       end
       
       def suffix
-        %(oin yar oyd aire atya uti aro yal iha).rand
+        %w(oin yar oyd aire atya uti aro yal iha).rand
       end 
       
       def land_name
