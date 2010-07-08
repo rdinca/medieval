@@ -27,7 +27,7 @@ module Medieval
           
       end
       
-      def ability2
+      def colour
         %w( White Yellow Red Green Blue Black Orange Purple).rand       
       end
 
@@ -36,12 +36,12 @@ module Medieval
     end  
     
     FORMATS = [
-      Proc.new { ["The", name_of_order, formation_name, "of", ability, ability2, creature_name]}, 
-      Proc.new { ["The", name_of_order, formation_name, "of", ability, ability2, creature_name]}, 
+      Proc.new { ["The", name_of_order, formation_name, "of", ability, colour, creature_name]}, 
+      Proc.new { ["The", name_of_order, formation_name, "of", ability, colour, creature_name]}, 
       Proc.new { ["The", ability, ability2, creature_name]},       
       Proc.new { ["The", name_of_order, formation_name, "of", ability, creature_name]}, 
-      Proc.new { ["The", name_of_order, formation_name, "of", ability2, creature_name]},       
-      Proc.new { ["The", ability2, creature_name]},
+      Proc.new { ["The", name_of_order, formation_name, "of", colour, creature_name]},       
+      Proc.new { ["The", colour, creature_name]},
       Proc.new { ["The", ability , creature_name]}    
     ]
     
