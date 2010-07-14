@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{medieval}
-  s.version = "0.3.6"
+  s.version = "0.3.7"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["rdinca"]
-  s.date = %q{2010-07-08}
+  s.date = %q{2010-07-14}
   s.description = %q{This is a medieval names generator, inspired by faker gem. In the future it will be used for an medieval online strategy game.}
   s.email = %q{radudinca@yahoo.com}
   s.extra_rdoc_files = [
