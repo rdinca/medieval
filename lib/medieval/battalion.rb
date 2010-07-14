@@ -38,7 +38,7 @@ module Medieval
     FORMATS = [
       Proc.new { ["The", name_of_order, formation_name, "of", ability, colour, creature_name]}, 
       Proc.new { ["The", name_of_order, formation_name, "of", ability, colour, creature_name]}, 
-      Proc.new { ["The", ability, ability2, creature_name]},       
+      Proc.new { ["The", ability, colour, creature_name]},       
       Proc.new { ["The", name_of_order, formation_name, "of", ability, creature_name]}, 
       Proc.new { ["The", name_of_order, formation_name, "of", colour, creature_name]},       
       Proc.new { ["The", colour, creature_name]},
