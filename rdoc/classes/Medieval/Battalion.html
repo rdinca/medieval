@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Class: Medieval::Battalion</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylesheet" href="../.././rdoc-style.css" type="text/css" media="screen" />
+  <script type="text/javascript">
+  // <![CDATA[
+
+  function popupCode( url ) {
+    window.open(url, "Code", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=150,width=400")
+  }
+
+  function toggleCode( id ) {
+    if ( document.getElementById )
+      elem = document.getElementById( id );
+    else if ( document.all )
+      elem = eval( "document.all." + id );
+    else
+      return false;
+
+    elemStyle = elem.style;
+    
+    if ( elemStyle.display != "block" ) {
+      elemStyle.display = "block"
+    } else {
+      elemStyle.display = "none"
+    }
+
+    return true;
+  }
+  
+  // Make codeblocks hidden by default
+  document.writeln( "<style type=\"text/css\">div.method-source-code { display: none }</style>" )
+  
+  // ]]>
+  </script>
+
+</head>
+<body>
+
+
+
+    <div id="classHeader">
+        <table class="header-table">
+        <tr class="top-aligned-row">
+          <td><strong>Class</strong></td>
+          <td class="class-name-in-header">Medieval::Battalion</td>
+        </tr>
+        <tr class="top-aligned-row">
+            <td><strong>In:</strong></td>
+            <td>
+                <a href="../../files/lib/medieval/battalion_rb.html">
+                lib/medieval/battalion.rb
+                </a>
+        <br />
+            </td>
+        </tr>
+
+        <tr class="top-aligned-row">
+            <td><strong>Parent:</strong></td>
+            <td>
+                Object
+            </td>
+        </tr>
+        </table>
+    </div>
+  <!-- banner header -->
+
+  <div id="bodyContent">
+
+
+
+  <div id="contextContent">
+
+
+
+   </div>
+
+    <div id="method-list">
+      <h3 class="section-bar">Methods</h3>
+
+      <div class="name-list">
+      <a href="#M000007">ability</a>&nbsp;&nbsp;
+      <a href="#M000008">colour</a>&nbsp;&nbsp;
+      <a href="#M000004">creature_name</a>&nbsp;&nbsp;
+      <a href="#M000006">formation_name</a>&nbsp;&nbsp;
+      <a href="#M000003">name</a>&nbsp;&nbsp;
+      <a href="#M000005">name_of_order</a>&nbsp;&nbsp;
+      </div>
+    </div>
+
+  </div>
+
+
+    <!-- if includes -->
+
+    <div id="section">
+
+
+    <div id="constants-list">
+      <h3 class="section-bar">Constants</h3>
+
+      <div class="name-list">
+        <table summary="Constants">
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">FORMATS</td>
+          <td>=</td>
+          <td class="context-item-value">[       Proc.new { [&quot;The&quot;, name_of_order, formation_name, &quot;of&quot;, ability, colour, creature_name]},        Proc.new { [&quot;The&quot;, name_of_order, formation_name, &quot;of&quot;, ability, colour, creature_name]},        Proc.new { [&quot;The&quot;, ability, colour, creature_name]},              Proc.new { [&quot;The&quot;, name_of_order, formation_name, &quot;of&quot;, ability, creature_name]},        Proc.new { [&quot;The&quot;, name_of_order, formation_name, &quot;of&quot;, colour, creature_name]},              Proc.new { [&quot;The&quot;, colour, creature_name]},       Proc.new { [&quot;The&quot;, ability , creature_name]}</td>
+        </tr>
+        </table>
+      </div>
+    </div>
+
+
+
+      
+
+
+    <!-- if method_list -->
+    <div id="methods">
+      <h3 class="section-bar">Public Class methods</h3>
+
+      <div id="method-M000003" class="method-detail">
+        <a name="M000003"></a>
+
+        <div class="method-heading">
+          <a href="#M000003" class="method-signature">
+          <span class="method-name">name</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000003-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000003-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/medieval/battalion.rb, line 8</span>
+      <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">name</span>
+        <span class="ruby-constant">FORMATS</span>.<span class="ruby-identifier">rand</span>.<span class="ruby-identifier">call</span>.<span class="ruby-identifier">join</span>(<span class="ruby-value str">' '</span>)
+      <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="section-bar">Protected Class methods</h3>
+
+      <div id="method-M000007" class="method-detail">
+        <a name="M000007"></a>
+
+        <div class="method-heading">
+          <a href="#M000007" class="method-signature">
+          <span class="method-name">ability</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000007-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000007-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/medieval/battalion.rb, line 26</span>
+      <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">ability</span>
+        [<span class="ruby-value str">&quot;Agreeable&quot;</span>, <span class="ruby-value str">&quot;Amused&quot;</span>, <span class="ruby-value str">&quot;Brave&quot;</span>, <span class="ruby-value str">&quot;Calm&quot;</span>, <span class="ruby-value str">&quot;Charming&quot;</span>, <span class="ruby-value str">&quot;Cheerful&quot;</span>, <span class="ruby-value str">&quot;Comfortable&quot;</span>, <span class="ruby-value str">&quot;Cooperative&quot;</span>, <span class="ruby-value str">&quot;Courageous&quot;</span>, <span class="ruby-value str">&quot;Crazy&quot;</span> <span class="ruby-value str">&quot;Delightful&quot;</span>, <span class="ruby-value str">&quot;Determined&quot;</span>, <span class="ruby-value str">&quot;Eager&quot;</span>, <span class="ruby-value str">&quot;Elated&quot;</span>, <span class="ruby-value str">&quot;Enchanting&quot;</span>, <span class="ruby-value str">&quot;Encouraging&quot;</span>, <span class="ruby-value str">&quot;Energetic&quot;</span>, <span class="ruby-value str">&quot;Enthusiastic&quot;</span>, <span class="ruby-value str">&quot;Excited&quot;</span>, <span class="ruby-value str">&quot;Exuberant&quot;</span>, <span class="ruby-value str">&quot;Fair&quot;</span>, <span class="ruby-value str">&quot;Faithful&quot;</span>, <span class="ruby-value str">&quot;Fantastic&quot;</span>, <span class="ruby-value str">&quot;Fast&quot;</span>, <span class="ruby-value str">&quot;Fine&quot;</span>, <span class="ruby-value str">&quot;Friendly&quot;</span>, <span class="ruby-value str">&quot;Funny&quot;</span>, <span class="ruby-value str">&quot;Gentle&quot;</span>, <span class="ruby-value str">&quot;Glorious&quot;</span>, <span class="ruby-value str">&quot;Good&quot;</span>, <span class="ruby-value str">&quot;Great&quot;</span> <span class="ruby-value str">&quot;Happy&quot;</span>, <span class="ruby-value str">&quot;Healthy&quot;</span>, <span class="ruby-value str">&quot;Helpful&quot;</span>, <span class="ruby-value str">&quot;Hilarious&quot;</span>, <span class="ruby-value str">&quot;Jolly&quot;</span>, <span class="ruby-value str">&quot;Joyous&quot;</span>, <span class="ruby-value str">&quot;Kind&quot;</span>, <span class="ruby-value str">&quot;Lively&quot;</span>, <span class="ruby-value str">&quot;Lovely&quot;</span>, <span class="ruby-value str">&quot;Lucky&quot;</span>, <span class="ruby-value str">&quot;Nice&quot;</span>, <span class="ruby-value str">&quot;Obedient&quot;</span>, <span class="ruby-value str">&quot;Perfect&quot;</span>, <span class="ruby-value str">&quot;Pleasant&quot;</span>, <span class="ruby-value str">&quot;Poor&quot;</span>, <span class="ruby-value str">&quot;Proud&quot;</span>, <span class="ruby-value str">&quot;Relieved&quot;</span>, <span class="ruby-value str">&quot;Silly&quot;</span>, <span class="ruby-value str">&quot;Smiling&quot;</span>, <span class="ruby-value str">&quot;Splendid&quot;</span>, <span class="ruby-value str">&quot;Successful&quot;</span>, <span class="ruby-value str">&quot;Thankful&quot;</span>, <span class="ruby-value str">&quot;Thoughtful&quot;</span>, <span class="ruby-value str">&quot;Victorious&quot;</span>, <span class="ruby-value str">&quot;Vivacious&quot;</span>, <span class="ruby-value str">&quot;Witty&quot;</span>, <span class="ruby-value str">&quot;Wonderful&quot;</span>, <span class="ruby-value str">&quot;Zealous&quot;</span>, <span class="ruby-value str">&quot;Zany&quot;</span>, <span class="ruby-value str">&quot;Glamorous&quot;</span>, <span class="ruby-value str">&quot;Gleaming&quot;</span>, <span class="ruby-value str">&quot;Gorgeous&quot;</span>, <span class="ruby-value str">&quot;Graceful&quot;</span>, <span class="ruby-value str">&quot;Grotesque&quot;</span>, <span class="ruby-value str">&quot;Handsome&quot;</span>, <span class="ruby-value str">&quot;Homely&quot;</span>, <span class="ruby-value str">&quot;Light&quot;</span>, <span class="ruby-value str">&quot;Long&quot;</span>, <span class="ruby-value str">&quot;Magnificent&quot;</span>, <span class="ruby-value str">&quot;Misty&quot;</span>, <span class="ruby-value str">&quot;Motionless&quot;</span>, <span class="ruby-value str">&quot;Muddy&quot;</span>, <span class="ruby-value str">&quot;Old-fashioned&quot;</span>, <span class="ruby-value str">&quot;Plain&quot;</span>, <span class="ruby-value str">&quot;Poised&quot;</span>, <span class="ruby-value str">&quot;Precious&quot;</span>, <span class="ruby-value str">&quot;Quaint&quot;</span>, <span class="ruby-value str">&quot;Shiny&quot;</span>, <span class="ruby-value str">&quot;Smoggy&quot;</span>, <span class="ruby-value str">&quot;Sparkling&quot;</span>, <span class="ruby-value str">&quot;Spotless&quot;</span>, <span class="ruby-value str">&quot;Stormy&quot;</span>, <span class="ruby-value str">&quot;Strange&quot;</span>, <span class="ruby-value str">&quot;Ugly&quot;</span>, <span class="ruby-value str">&quot;Ugliest&quot;</span>, <span class="ruby-value str">&quot;Unsightly&quot;</span>, <span class="ruby-value str">&quot;Unusual&quot;</span>, <span class="ruby-value str">&quot;Wide-eyed&quot;</span>, <span class="ruby-value str">&quot;Adorable&quot;</span>, <span class="ruby-value str">&quot;Adventurous&quot;</span>, <span class="ruby-value str">&quot;Aggressive&quot;</span>, <span class="ruby-value str">&quot;Alert&quot;</span>, <span class="ruby-value str">&quot;Attractive&quot;</span>, <span class="ruby-value str">&quot;Average&quot;</span>, <span class="ruby-value str">&quot;Beautiful&quot;</span>, <span class="ruby-value str">&quot;Blue-eyed&quot;</span>, <span class="ruby-value str">&quot;Bloody&quot;</span>, <span class="ruby-value str">&quot;Blushing&quot;</span>, <span class="ruby-value str">&quot;Bright&quot;</span>, <span class="ruby-value str">&quot;Clean&quot;</span>, <span class="ruby-value str">&quot;Clear&quot;</span>, <span class="ruby-value str">&quot;Cloudy&quot;</span>, <span class="ruby-value str">&quot;Colorful&quot;</span>, <span class="ruby-value str">&quot;Crowded&quot;</span>, <span class="ruby-value str">&quot;Cute&quot;</span>, <span class="ruby-value str">&quot;Dark&quot;</span>, <span class="ruby-value str">&quot;Drab&quot;</span>, <span class="ruby-value str">&quot;Distinct&quot;</span>, <span class="ruby-value str">&quot;Dull&quot;</span>, <span class="ruby-value str">&quot;Elegant&quot;</span>, <span class="ruby-value str">&quot;Excited&quot;</span>, <span class="ruby-value str">&quot;Fancy&quot;</span>, <span class="ruby-value str">&quot;Filthy&quot;</span>, <span class="ruby-value str">&quot;Big&quot;</span>, <span class="ruby-value str">&quot;Colossal&quot;</span>, <span class="ruby-value str">&quot;Fat&quot;</span>, <span class="ruby-value str">&quot;Gigantic&quot;</span>, <span class="ruby-value str">&quot;Great&quot;</span>, <span class="ruby-value str">&quot;Huge&quot;</span>, <span class="ruby-value str">&quot;Immense&quot;</span>, <span class="ruby-value str">&quot;Large&quot;</span>, <span class="ruby-value str">&quot;Little&quot;</span>, <span class="ruby-value str">&quot;Mammoth&quot;</span>, <span class="ruby-value str">&quot;Massive&quot;</span>, <span class="ruby-value str">&quot;Miniature&quot;</span>, <span class="ruby-value str">&quot;Petite&quot;</span>, <span class="ruby-value str">&quot;Puny&quot;</span>, <span class="ruby-value str">&quot;Scrawny&quot;</span>, <span class="ruby-value str">&quot;Short&quot;</span>, <span class="ruby-value str">&quot;Small&quot;</span>, <span class="ruby-value str">&quot;Tall&quot;</span>, <span class="ruby-value str">&quot;Teeny&quot;</span>, <span class="ruby-value str">&quot;Teeny-tiny&quot;</span>, <span class="ruby-value str">&quot;Tinybroad&quot;</span>, <span class="ruby-value str">&quot;Chubby&quot;</span>, <span class="ruby-value str">&quot;Crooked&quot;</span>, <span class="ruby-value str">&quot;Curved&quot;</span>, <span class="ruby-value str">&quot;Deep&quot;</span>, <span class="ruby-value str">&quot;Flat&quot;</span>, <span class="ruby-value str">&quot;High&quot;</span>, <span class="ruby-value str">&quot;Hollow&quot;</span>, <span class="ruby-value str">&quot;Low&quot;</span>, <span class="ruby-value str">&quot;Narrow&quot;</span>, <span class="ruby-value str">&quot;Round&quot;</span>, <span class="ruby-value str">&quot;Shallow&quot;</span>, <span class="ruby-value str">&quot;Skinny&quot;</span>, <span class="ruby-value str">&quot;Square&quot;</span>, <span class="ruby-value str">&quot;Steep&quot;</span>, <span class="ruby-value str">&quot;Straight&quot;</span>, <span class="ruby-value str">&quot;Wide&quot;</span>].<span class="ruby-identifier">rand</span>
+          
+      <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000008" class="method-detail">
+        <a name="M000008"></a>
+
+        <div class="method-heading">
+          <a href="#M000008" class="method-signature">
+          <span class="method-name">colour</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000008-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000008-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/medieval/battalion.rb, line 31</span>
+      <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">colour</span>
+        <span class="ruby-node">%w( White Yellow Red Green Blue Black Orange Purple)</span>.<span class="ruby-identifier">rand</span>       
+      <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000004" class="method-detail">
+        <a name="M000004"></a>
+
+        <div class="method-heading">
+          <a href="#M000004" class="method-signature">
+          <span class="method-name">creature_name</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000004-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000004-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/medieval/battalion.rb, line 13</span>
+      <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">creature_name</span>
+        <span class="ruby-node">%w(Dragon Cyclop Wyvern Stud Dwarf Aardvark Buffalo Ant Anteater Antelope Ape Armadillo Donkey Baboon Badger Bat Bear Beaver Bee Bison Boar Bush Butterfly Camel Cat Cattle Chamois Cheetah Chicken Chimpanzee Cobra Cockroach Cormorant Coyote Crab Crane Crocodile Crow Deer Dog Dogfish Dolphin Dove Dragonfly Duck Dugong Eagle Echidna Eel Eland Elephant Elk Falcon Ferret Finch Fly Fox Frog Gaur Gazelle Gerbil Giant Panda Giraffe Gnu Goat Goose Gorilla Guanaco Guinea Gull Hamster Hare Hawk Hedgehog Heron Hippopotamus Hornet Horse Hyena Jackal Jaguar Jellyfish Kangaroo Komodo Kouprey Kudu Lark Lemur Leopard Lion Llama Loris Louse Lobster Lyrebird Magpie Mallard Manatee Meerkat Mink Mole Monkey Moose Mouse Mosquito Mule Nightingale Okapi Oryx Ostrich Otter Owl Ox Oyster Panther Partridge Peafowl Pelican Pig Pigeon Pony Porcupine Quelea Rabbit Raccoon Rail Ram Rat Raven RedDeer RedPanda Reindeer Rhinoceros Salamander Sealion Seal Seastar Shark Sheep Shrew Skunk Snail Snake Spider Squid Squirrel Swan Tapir Tarsier Tiger Toad Turkey Turtle Vicuna Walrus Wasp WaterBuffalo Weasel Whale Wolf Worm Yak Zebra)</span>.<span class="ruby-identifier">rand</span>.<span class="ruby-identifier">pluralize</span>
+      <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000006" class="method-detail">
+        <a name="M000006"></a>
+
+        <div class="method-heading">
+          <a href="#M000006" class="method-signature">
+          <span class="method-name">formation_name</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000006-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000006-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/medieval/battalion.rb, line 21</span>
+      <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">formation_name</span>
+        <span class="ruby-node">%w(Battalion Legion Brigade Rank Pack Regiment Squadron Swarm Squad Division)</span>.<span class="ruby-identifier">rand</span>
+      <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000005" class="method-detail">
+        <a name="M000005"></a>
+
+        <div class="method-heading">
+          <a href="#M000005" class="method-signature">
+          <span class="method-name">name_of_order</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000005-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000005-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/medieval/battalion.rb, line 17</span>
+      <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">name_of_order</span>
+       <span class="ruby-identifier">rand</span>(<span class="ruby-value">100</span>).<span class="ruby-identifier">ordinalize</span>
+      <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+<div id="validator-badges">
+  <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+</div>
+
+</body>
+</html>
