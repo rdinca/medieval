@@ -17,7 +17,7 @@ protected
       end
       
       def bravery_title
-        ['the Brave' , 'the Great', 'the Dragon' , 'the Paesant' , 'el Salvatore' , 'the Fraud' , 'be Moody', 'the Knight', 'the Archer' , 'the Soldier' , 'the Poor' , 'the Ambitious' , 'el Artistico', 'el Cinico', 'el Entusiasta' , 'el Humilde' , 'el Maleducado', 'the Lion Hearted' ].rand
+        ['the Brave' , 'the Great', 'the Dragon' , 'the Paesant' , 'the Saviour' , 'the Fraud' , 'be Moody', 'the Knight', 'the Archer' , 'the Soldier' , 'the Poor' , 'the Ambitious' , 'the Artist', 'the Cinic', 'The Enthusiast' , 'the Humble' , 'the Rude', 'the Lion Hearted' ].rand
       end
       
       def origins_title
