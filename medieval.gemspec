@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["rdinca"]
-  s.date = %q{2010-09-03}
+  s.date = %q{2010-10-01}
   s.description = %q{This is a medieval names generator, inspired by faker gem. In the future it will be used for an medieval online strategy game.}
   s.email = %q{radudinca@yahoo.com}
   s.extra_rdoc_files = [
@@ -25,10 +25,19 @@ Gem::Specification.new do |s|
      "VERSION",
      "lib/extras/array.rb",
      "lib/medieval.rb",
+     "lib/medieval/attributes.rb",
      "lib/medieval/battalion.rb",
      "lib/medieval/realm.rb",
      "lib/medieval/soldier.rb",
      "medieval.gemspec",
+     "rdoc/classes/Medieval/Battalion.html",
+     "rdoc/classes/Medieval/Realm.html",
+     "rdoc/classes/Medieval/Soldier.html",
+     "rdoc/files/lib/extras/array_rb.html",
+     "rdoc/files/lib/medieval/battalion_rb.html",
+     "rdoc/files/lib/medieval/realm_rb.html",
+     "rdoc/files/lib/medieval/soldier_rb.html",
+     "rdoc/files/lib/medieval_rb.html",
      "test/helper.rb",
      "test/test_medieval.rb"
   ]
