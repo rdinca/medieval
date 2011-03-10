@@ -11,7 +11,7 @@ module Medieval
     end  
     
     def name_of_order
-      rand(100).ordinalize
+      ( rand(99) + 1 ).ordinalize
     end
     
     def formation_name
@@ -29,7 +29,7 @@ module Medieval
     end
     
     def bravery_title
-      ['the Brave' , 'the Great', 'the Dragon' , 'the Paesant' , 'the Saviour' , 'the Fraud' , 'be Moody', 'the Knight', 'the Archer' , 'the Soldier' , 'the Poor' , 'the Ambitious' , 'the Artist', 'the Cinic', 'The Enthusiast' , 'the Humble' , 'the Rude', 'the Lion Hearted' ].rand
+      ['the Brave' , 'the Great', 'the Dragon' , 'the Paesant' , 'the Saviour' , 'the Fraud' , 'be Moody', 'the Knight', 'the Archer' , 'the Soldier' , 'the Poor' , 'the Ambitious' , 'the Artist', 'the Cinic', 'the Enthusiast' , 'the Humble' , 'the Rude', 'the Lion Hearted' ].rand
     end      
 
 

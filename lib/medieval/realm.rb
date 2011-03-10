@@ -34,6 +34,5 @@ module Medieval
 #      Proc.new {[realm_prefix, ' ' , ability, main_name, realm_suffix]},
       Proc.new {[realm_prefix, main_name]}
     ]
-end
-  
+  end  
 end
