@@ -23,7 +23,7 @@ protected
       end
 
       def nickname
-        "the " << [creature_name, ability, colour].rand
+        "the " << [creature_name, ability, colour, occupation].rand
       end
 
       def suffix
