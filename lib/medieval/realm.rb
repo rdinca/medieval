@@ -22,8 +22,7 @@ module Medieval
       end
 
       def realm_suffix
-        (%w(county realm ton land ville berg burgh borough bury view port mouth stad furt chester mouth fort haven side shire)
-				+ %w(sway  sovereignty province)) .rand
+        (%w(county realm ton land ville berg burgh borough bury view port mouth stad furt chester mouth fort haven side shire sway sovereignty province)) .rand
       end
 
 
